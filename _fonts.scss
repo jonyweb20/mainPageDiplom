@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Garamond";
+    font-style: Regular;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Cormorant_Garamond"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: light;
+    
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Light"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: Italic;
+   
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Italic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: Bold;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Bold"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf") format("ttf")
+  };
+@font-face {
+    font-family: "Garamond";
+    font-style: BoldItalic;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-BoldItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Garamond";
+    font-style: LightItalic;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-LightItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Garamond";
+    font-style: Medium;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Medium"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf") format("ttf")
+  };
+  
+@font-face {
+    font-family: "Garamond";
+    font-style: MediumItalic;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-MediumItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf") format("ttf")
+  };
+  

@@ -1,0 +1,24 @@
+@media (max-width: 992px){
+    .container-nav{
+        grid-template-columns: 280px 1fr;
+        .navbar-menu{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1em;
+            
+        }
+        .navbar-collapse{
+            display: none;
+        }
+        .navbarUser{
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 543px){
+    
+}
