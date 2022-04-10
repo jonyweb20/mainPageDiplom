@@ -25,16 +25,20 @@ body {
     from {
         opacity: 0.2;
     }
+
     to {
         opacity: 1;
     }
 }
+
 @keyframes readmeOut {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
+        display: none;
     }
 }
 
@@ -345,15 +349,11 @@ body {
             z-index: 1;
             align-items: start;
 
-            /* .cardInfoIcon {} */
-           /* .slideInfo{
-                transform: translate(350px,0);
-    -webkit-transform: translate(350px,0); 
-    -o-transform: translate(350px,0);
-    -moz-transform: translate(350px,0);
-            } */
-
-        
+            .readmeActiv {
+                top: 1em;
+                transform: translateX(-20em);
+                animation: readmeOut 2s;
+            }
 
             .readmeDescriptionShow {
                 display: grid;
@@ -367,9 +367,17 @@ body {
                 text-shadow: 0 0 1px black;
                 letter-spacing: 1.5px;
                 margin: 1em;
+                transform: translateX(0);
+                transition: transform 2s;
                 animation: readmeIn 2s;
 
-                &-basic {      
+                span {
+                    font-family: "Vollkorn";
+                    font-style: Italic;
+                }
+
+                &-basic {
+
                     list-style: none;
                 }
 
@@ -379,14 +387,11 @@ body {
 
 
             }
+
+           
             .readme-description {
                 display: none;
-
-            }
-            
-
-
-
+            } 
 
         }
 
@@ -416,6 +421,45 @@ body {
             grid-row-end: 4;
             align-items: end;
             z-index: 1;
+            .buyDescriptionShow{
+                display: grid;
+                grid-template-columns: 1fr;
+                backdrop-filter: blur(20px);
+                border-radius: 10%;
+                position: absolute;
+                height: inherit;
+                top: 1em;
+                right: -1em;
+                letter-spacing: 1.5px;
+                margin: 1em;
+                transform: translateX(0);
+                transition: transform 2s;
+                animation: readmeIn 2s;
+                span {
+                    font-family: "Vollkorn";
+                    font-style: Italic;
+                }
+                .buyShow{
+                    display: grid;
+                    gap: 0.2em;
+                    list-style: none;
+                    color: #000;
+                    height: 55.6vh;
+                    li{
+                        background: linear-gradient(-0.5deg, darkseagreen, transparent);
+                        margin-bottom: 5px;
+                    }
+                    &-consult{
+                     align-items: end;   
+                                            }
+
+                }
+
+            }
+            .readme-description {
+                display: none;
+            }
+            
         }
     }
 

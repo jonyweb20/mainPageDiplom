@@ -35,7 +35,7 @@ body .navbar { background-image: linear-gradient(white, #689AD3); }
 @keyframes readmeIn { from { opacity: 0.2; }
   to { opacity: 1; } }
 @keyframes readmeOut { from { opacity: 1; }
-  to { opacity: 0; } }
+  to { opacity: 0; display: none; } }
 @keyframes slideIn { from { opacity: 0.5; }
   to { font-size: 1.2em; opacity: 1; } }
 .container-nav { display: grid; grid-template-columns: 280px 6fr 1fr 3fr; font-family: Garamond; font-weight: 600; height: 3em; }
@@ -84,17 +84,22 @@ body .navbar { background-image: linear-gradient(white, #689AD3); }
 .container-card .cardInfoCount { display: grid; align-items: center; grid-template-columns: 1fr; grid-template-rows: 1fr; margin-left: 2em; }
 .container-card .cardInfoCount-Counter { display: flex; align-self: center; height: 20px; width: 50px; font-size: 20px; font-family: Garamond; font-weight: bold; backdrop-filter: blur(5px); }
 .container-card .cardInfo { display: grid; grid-template-columns: 1fr 5fr 1fr; grid-template-rows: 1fr 1fr 1fr; height: inherit; position: relative; box-shadow: 0px 22px 60px -6px #01000a; }
-.container-card .cardInfo .cardInfo-Readme { display: grid; grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 4; z-index: 1; align-items: start; /* .cardInfoIcon {} */        /* .slideInfo{ transform: translate(350px,0);
--webkit-transform: translate(350px,0); 
--o-transform: translate(350px,0);
--moz-transform: translate(350px,0); } */ }
-.container-card .cardInfo .cardInfo-Readme .readmeDescriptionShow { display: grid; grid-template-columns: 1fr 1fr; backdrop-filter: blur(20px); border-radius: 10%; width: 1fr 1fr; height: inherit; position: absolute; top: 1em; text-shadow: 0 0 1px black; letter-spacing: 1.5px; margin: 1em; animation: readmeIn 2s; }
+.container-card .cardInfo .cardInfo-Readme { display: grid; grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 4; z-index: 1; align-items: start; }
+.container-card .cardInfo .cardInfo-Readme .readmeActiv { top: 1em; transform: translateX(-20em); animation: readmeOut 2s; }
+.container-card .cardInfo .cardInfo-Readme .readmeDescriptionShow { display: grid; grid-template-columns: 1fr 1fr; backdrop-filter: blur(20px); border-radius: 10%; width: 1fr 1fr; height: inherit; position: absolute; top: 1em; text-shadow: 0 0 1px black; letter-spacing: 1.5px; margin: 1em; transform: translateX(0); transition: transform 2s; animation: readmeIn 2s; }
+.container-card .cardInfo .cardInfo-Readme .readmeDescriptionShow span { font-family: "Vollkorn"; font-style: Italic; }
 .container-card .cardInfo .cardInfo-Readme .readmeDescriptionShow-basic { list-style: none; }
 .container-card .cardInfo .cardInfo-Readme .readmeDescriptionShow-size { list-style: none; }
 .container-card .cardInfo .cardInfo-Readme .readme-description { display: none; }
 .container-card .cardInfo .cardInfo-Img { overflow: hidden; grid-column-start: 1; grid-column-end: 8; grid-row-start: 1; grid-row-end: 4; height: inherit; }
 .container-card .cardInfo .cardInfo-Img img { object-fit: cover; height: 100%; width: 100%; border-radius: 105px; }
 .container-card .cardInfo .cardInfo-Buy { grid-column-start: 7; grid-column-end: 8; grid-row-start: 1; grid-row-end: 4; align-items: end; z-index: 1; }
+.container-card .cardInfo .cardInfo-Buy .buyDescriptionShow { display: grid; grid-template-columns: 1fr; backdrop-filter: blur(20px); border-radius: 10%; position: absolute; height: inherit; top: 1em; right: -1em; letter-spacing: 1.5px; margin: 1em; transform: translateX(0); transition: transform 2s; animation: readmeIn 2s; }
+.container-card .cardInfo .cardInfo-Buy .buyDescriptionShow span { font-family: "Vollkorn"; font-style: Italic; }
+.container-card .cardInfo .cardInfo-Buy .buyDescriptionShow .buyShow { display: grid; gap: 0.2em; list-style: none; color: #000; height: 55.6vh; }
+.container-card .cardInfo .cardInfo-Buy .buyDescriptionShow .buyShow li { background: linear-gradient(-0.5deg, darkseagreen, transparent); margin-bottom: 5px; }
+.container-card .cardInfo .cardInfo-Buy .buyDescriptionShow .buyShow-consult { align-items: end; }
+.container-card .cardInfo .cardInfo-Buy .readme-description { display: none; }
 .container-card .cardInfo-Favor { display: grid; font-family: Garamond; font-weight: 300; height: 60vh; font-size: 20px; align-content: flex-start; padding-left: 3em; }
 
 /*.readmeDescriptionFunction { display: grid; grid-template-columns: 1fr 1fr; backdrop-filter: blur(5px); border-radius: 10%; width: 1fr 1fr; height: inherit;
