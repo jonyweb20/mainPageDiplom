@@ -21,6 +21,23 @@ body {
     fill: red;
 }
 
+@keyframes readmeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes readmeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes slideIn {
     from {
         opacity: 0.5;
@@ -317,7 +334,6 @@ body {
         grid-template-rows: 1fr 1fr 1fr;
         height: inherit;
         position: relative;
-
         box-shadow: 0px 22px 60px -6px #01000a;
 
         .cardInfo-Readme {
@@ -329,29 +345,29 @@ body {
             z-index: 1;
             align-items: start;
 
-            .cardInfoIcon {}
-          /*  .slideInfo{
+            /* .cardInfoIcon {} */
+           /* .slideInfo{
                 transform: translate(350px,0);
     -webkit-transform: translate(350px,0); 
     -o-transform: translate(350px,0);
     -moz-transform: translate(350px,0);
-            }*/
+            } */
 
-            .readme-description {
-                display: none;
-
-            }
+        
 
             .readmeDescriptionShow {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(20px);
                 border-radius: 10%;
                 width: 1fr 1fr;
                 height: inherit;
                 position: absolute;
                 top: 1em;
-                //transition: all 2s ease-in-out;
+                text-shadow: 0 0 1px black;
+                letter-spacing: 1.5px;
+                margin: 1em;
+                animation: readmeIn 2s;
 
                 &-basic {      
                     list-style: none;
@@ -361,6 +377,10 @@ body {
                     list-style: none;
                 }
 
+
+            }
+            .readme-description {
+                display: none;
 
             }
             

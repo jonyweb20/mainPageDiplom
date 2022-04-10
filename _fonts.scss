@@ -47,16 +47,43 @@
 @font-face {
     font-family: "Garamond";
     font-style: Medium;
-    /* Браузер сначала попробует найти шрифт локально */
     src: local("CormorantGaramond-Medium"),
          url("/fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf") format("ttf")
   };
   
 @font-face {
     font-family: "Garamond";
-    font-style: MediumItalic;
-    /* Браузер сначала попробует найти шрифт локально */
+    font-style: MediumItalic; 
     src: local("CormorantGaramond-MediumItalic"),
          url("/fonts/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf") format("ttf")
   };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Italic;
+    src: local("Vollkorn-Italic"),
+         url("/fonts/Vollkorn/Vollkorn-Italic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Medium;
+    src: local("Vollkorn-Medium"),
+         url("/fonts/Vollkorn/Vollkorn-Medium.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: MediumItalic;
+    src: local("Vollkorn-MediumItalic"),
+         url("/fonts/Vollkorn/Vollkorn-MediumItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Regular;
+    src: local("Vollkorn-Regular"),
+         url("/fonts/Vollkorn/Vollkorn-Regular.ttf") format("ttf")
+  };
+  
   

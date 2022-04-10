@@ -17,17 +17,17 @@ function selectIcon() {
 
 function dropDownReadme(item) {
     let descrip = item.querySelector('#DropdownReadme');
-    let selectDrop = descrip.classList.toggle("readmeDescriptionShow"); 
+    let selectDrop = descrip.classList.toggle("readme-description"); 
     console.log(descrip);
     console.log(selectDrop);
 }
 window.onclick = function(event) {
   if (!event.target.matches('cardInfo-Readme')) {
-    let dropdowns = document.getElementsByClassName("readme-description");
+    let dropdowns = document.getElementById("DropdownReadme");
        console.log(dropdowns);
     for (let i = 0; i < dropdowns.length; i++) {
-      if (dropdowns[i].classList.contains('readmeDescriptionShow')) {
-        dropdowns[i].classList.remove('readmeDescriptionShow');
+      if (dropdowns[i].classList.contains('readme-description')) {
+        dropdowns[i].classList.remove('readme-description');
       }
     }
   }
