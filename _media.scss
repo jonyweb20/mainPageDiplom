@@ -1,24 +1,147 @@
-@media (max-width: 992px){
-    .container-nav{
+@media (max-width: 972px) {
+    .container-nav {
+        position: relative;
         grid-template-columns: 280px 1fr;
-        .navbar-menu{
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 1em;
+
+        .navbar-menuDropdown {
+
+
+            .navbar-menuIcon {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 1em;
+
+            }
+
+            .navbar-collapse {
+                    display: none;
+                .navbarPrime{
+                    height: 2.7em;
+                }
+
+            }
+            .dropMenuShow {
+                display: grid;
+                position: absolute;
+                top: 3em;
+                right: 0;
+                backdrop-filter: blur(20px);
+                z-index: 2;
+                grid-template-columns: 1fr;
+
+                ul {
+                    display: grid;
+                    gap: 0.2em;
+                    color: #000;
+                    height: 37.5vh;
+
+                    li {
+                        height: 40px;
+                        background: linear-gradient(-0.5deg, darkseagreen, transparent);
+                        //margin-bottom: 5px;
+                    }
+                }
+
+
+            }
+
             
         }
-        .navbar-collapse{
+
+        .navbarUser {
             display: none;
         }
-        .navbarUser{
-            display: none;
+
+
+
+    }
+    .container-bc{
+        display: grid;
+        position: relative;
+        .breadcrumb-phone{
+            position: absolute;
+            top: -2em;
+            right: 2.7em;
         }
     }
-}
-@media (max-width: 768px){
+     .container-card {
+        .cardInfo{
+            .cardInfo-Readme{
+                font-size: large;
+                .readmeDescriptionShow-basic{
+                    margin: 0 5px;
+                    li{display: flex;
+                        flex-basis: min-content;
+                        justify-content: space-between;
+                        font-size: 0.8em;
+                        .descriptionValue{
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+                .readmeDescriptionShow-size{
+                     margin: 0 5px;
+                    li{display: flex;
+                        flex-basis: min-content;
+                        justify-content: space-between;
+                        font-size: 0.8em;
+                        .descriptionValue{
+                            text-align: center;
+                        }
+                        
+                    }  
+                }
+            }
+        }
+    }  
     
 }
 
-@media (max-width: 543px){
+@media (max-width: 768px) {
+    .container-cardnav{
+        height: 33px;   
+    }
+    .container-card {
+        .cardInfo{
+            .cardInfo-Readme{
+                font-family: Lato;
+                font-weight: Light;
+                //font-size: medium;
+                .readmeDescriptionShow-basic{
+                    margin: 0 5px;
+                    li{display: flex;
+                        flex-basis: min-content;
+                        justify-content: space-between;
+                        font-size: 0.8em;
+                        .descriptionValue{
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+                .readmeDescriptionShow-size{
+                     margin: 0 5px;
+                    li{display: flex;
+                        flex-basis: min-content;
+                        justify-content: space-between;
+                        font-size: 0.8em;
+                        .descriptionValue{
+                            text-align: center;
+                        }
+                        
+                    }  
+                }
+            }
+        }
+    }  
     
+    .buyShow li{
+        height: 23px;
+    }
+    footer{
+            margin-top:1.1em;
+        }
 }
+
+@media (max-width: 543px) {}

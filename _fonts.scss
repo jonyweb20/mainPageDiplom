@@ -85,5 +85,17 @@
     src: local("Vollkorn-Regular"),
          url("/fonts/Vollkorn/Vollkorn-Regular.ttf") format("ttf")
   };
+@font-face {
+    font-family: "Exo2Thin";
+    font-style: Regular;
+    src: local("Exo2Thin-Regular"),
+         url("/fonts/Exo2Thin.ttf") format("ttf")
+  };
+@font-face {
+    font-family: "Lato";
+    font-style: Light;
+    src: local("Lato-Light"),
+         url("/fonts/Lato/Lato-Light.ttf") format("ttf")
+  };
   
   

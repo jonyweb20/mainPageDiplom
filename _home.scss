@@ -1,0 +1,71 @@
+.container-card {
+    .AboutInfo {
+        display: flex;
+        height: inherit;
+        width: inherit;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .AboutInfo-intro {
+          position: absolute;
+            .intro{
+                opacity: 0;
+            }
+        }
+        .AboutInfo-rel {
+            font-size: 2em;
+            font-family: Vollkorn;
+            font-style: italic;
+            font-weight: 700;
+            position: absolute;
+        }
+        
+        .AboutInfo-block{
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: azure;
+        }
+    }
+}
+
+//animation text
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+}
+
+.even{
+  animation: smoky-mirror 3s 4s both;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
