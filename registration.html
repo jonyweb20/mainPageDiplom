@@ -27,23 +27,6 @@
                                 <a class="nav-link active" aria-current="page" href="home.html"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="catalog.html" id="catMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
-                                <ul class="dropdown-menu" aria-labelledby="catMenuLink">
-                                    <li><a class="dropdown-item" href="#">Мужские</a></li>
-                                    <li><a class="dropdown-item" href="#">Женские</a></li>
-                                    <li><a class="dropdown-item" href="#">Детские</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Доставка</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Оплата</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Гарантия</a>
-                            </li>
-                            <li class="nav-item dropdown">
                                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 <input type="text" class="search" id="search">
                             </li>
@@ -70,9 +53,6 @@
         </nav>
         <div class="container-bc">
             <div class="breadcrumb">
-                <ol class="breadcrumb-nav">
-                    <li class="breadcrumb-nav-item"><a href="#">Главная\</a></li>
-                </ol>
             </div>
             <div class="breadcrumb-phone">
                 <input type="checkbox" id="checkIcon">
@@ -85,26 +65,30 @@
                 </div>
             </div>
         </div>
-        <div class="container-cardnav">
-            <div class="container-cardnav-arrow arrowLeft moveLeft"><i class="fa-solid fa-chevron-left"></i></div>
-
-            <div class="container-cardnav-arrow arrowRight moveRight"><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-        <div class="container-card">
-            <div class="cardInfoCount">
-                <div class="cardInfoCount-Counter">
-                    <div class="cardInfoCount-Counter-one">1 \ </div>
-                    <div class="cardInfoCount-Counter-all"> 10</div>
-                </div>
+        <h1>Регистрация</h1>
+        <div class="inputBlock">
+            <div class="inp inp-firstName"><label for="firstName">Имя</label>
+                <input type="text" id="firstName" placeholder="Введите Ваше имя">
             </div>
-            <div class="AboutInfo">
-                <div class="AboutInfo-intro">
-                    <p class="intro intro-p1">Мы очень рады что Вы вместе с нами&nbsp;!</p>
-                    <p class="intro intro-p2">У нас Вы найдете последние новинки брендовых оправ!</p>
-                    <p class="intro intro-p3">Качество материала и изделия на  уровне именитых брендов!</p>
-                    <p class="intro intro-p4">Начнем выбор!!!</p>
-                </div>
-                <p class="AboutInfo-rel"></p>
+            <div class="inp inp-lastName"><label for="lastName">Фамилия</label>
+                <input type="text" id="lastName" placeholder="Введите Вашу фамилию">
+            </div>
+            <div class="inp inp-email"><label for="inMail">E-mail</label>
+                <input type="mail" id="inMail" placeholder="Введите e-mail">
+            </div>
+            <div class="inp inp-pass"><label for="pass">Пароль</label>
+                <input type="password" id="pass" placeholder="Введите пароль">
+            </div>
+            <div class="inp inp-passConf"><label for="passConf">Подтверждение парля</label>
+                <input type="password" id="passConf">
+            </div>
+            <div class="inp inp-tel"><label for="telefon">Телефон</label>
+                <input type="password" id="telefon" placeholder="Введите телефон в формате +7-111-222-33-44">
+            </div>
+
+            <div class="buttonBlock">
+                <button class="button buttonSub" type="submit"> <span>Отправить</span></button>
+                <button class="button buttonAutorize" type="button"> <span>Авторизация</span></button>
             </div>
         </div>
 
@@ -119,15 +103,18 @@
                     <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footerInfo">&copy; SH-EVG</div>
+            <div class="footerInfo">
+                &copy; SH-EVG
+            </div>
             <div class="footerZnak"><a href='https://www.freepik.com/vectors/background'>Background created by upklyak</a></div>
         </footer>
 
 
     </div>
     <script src="nav.js"></script>
-    <script src="hc.js"></script>
-    
+    <script src="reg.js"></script>
+
+
 </body>
 
 </html>
