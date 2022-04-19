@@ -11,7 +11,16 @@ h1 {
 .inputBlock {
     display: grid;
     height: 60vh;
-
+    margin-left: 1em;
+.inputSecBlock{
+    display: flex;
+    justify-content: flex-start;
+    .answerBlock{
+        align-self: end;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    color: $colorDanger;
+    }
     .inp {
         display: grid;
         width: 40%;
@@ -27,9 +36,10 @@ h1 {
 
         input {
             border-width: 2px 1px 2px 1px;
-  border-style: solid dashed solid dashed;
-  border-color: $colorTop $colorMin $colorTop $colorMin;
-            &:placeholder-shown{
+            border-style: solid dashed solid dashed;
+            border-color: $colorTop $colorMin $colorTop $colorMin;
+
+            &:placeholder-shown {
                 opacity: 0.5;
             }
 
@@ -39,9 +49,13 @@ h1 {
         }
     }
 
+}
+   
+
     .buttonBlock {
         margin: 1em;
-        .button{
+
+        .button {
             text-transform: uppercase;
             border: 4px double rgba(255, 255, 255, .25);
             padding: 0.5em 0em;
@@ -49,25 +63,28 @@ h1 {
             border-radius: 9px;
             cursor: pointer;
         }
-        .buttonSub {
-            
 
-            span {
-                font-family: Lato, sans-serif;
-                font-weight: bold;
-                text-shadow: 0 0 80px rgba(255, 255, 255, .5);
-                background: url(img/animated-text-fill.png) repeat-y;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-animation: aitf 80s linear infinite;
-                -webkit-transform: translate3d(0, 0, 0);
-                -webkit-backface-visibility: hidden;
+        .buttonSub {}
+
+        span {
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+            background: url(img/animated-text-fill.png) repeat-y;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: aitf 80s linear infinite;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
+        }
+
+        .buttonAutorize {
+            margin-left: 2em;
+            a{
+                text-decoration: none;
             }
         }
-        .buttonAutorize{
-            margin-left: 2em;
-        }
-        
+
     }
 
     button {

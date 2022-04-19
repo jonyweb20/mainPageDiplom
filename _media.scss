@@ -14,12 +14,14 @@
             }
 
             .navbar-collapse {
-                    display: none;
-                .navbarPrime{
+                display: none;
+
+                .navbarPrime {
                     height: 2.7em;
                 }
 
             }
+
             .dropMenuShow {
                 display: grid;
                 position: absolute;
@@ -45,7 +47,7 @@
 
             }
 
-            
+
         }
 
         .navbarUser {
@@ -55,93 +57,137 @@
 
 
     }
-    .container-bc{
+
+    .container-bc {
         display: grid;
         position: relative;
-        .breadcrumb-phone{
+
+        .breadcrumb-phone {
             position: absolute;
             top: -2em;
             right: 2.7em;
         }
     }
-     .container-card {
-        .cardInfo{
-            .cardInfo-Readme{
+
+    .container-card {
+        .cardInfo {
+            .cardInfo-Readme {
                 font-size: large;
-                .readmeDescriptionShow-basic{
+
+                .readmeDescriptionShow-basic {
                     margin: 0 5px;
-                    li{display: flex;
+
+                    li {
+                        display: flex;
                         flex-basis: min-content;
                         justify-content: space-between;
                         font-size: 0.8em;
-                        .descriptionValue{
+
+                        .descriptionValue {
                             text-align: center;
                         }
-                        
+
                     }
                 }
-                .readmeDescriptionShow-size{
-                     margin: 0 5px;
-                    li{display: flex;
+
+                .readmeDescriptionShow-size {
+                    margin: 0 5px;
+
+                    li {
+                        display: flex;
                         flex-basis: min-content;
                         justify-content: space-between;
                         font-size: 0.8em;
-                        .descriptionValue{
+
+                        .descriptionValue {
                             text-align: center;
                         }
-                        
-                    }  
+
+                    }
                 }
             }
         }
-    }  
-    
+    }
+
+    .inputBlock {
+        .inputSecBlock {
+                .inp-auto {
+                    width: 60%;
+                }
+            
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    .container-cardnav{
-        height: 33px;   
+    .container-cardnav {
+        height: 33px;
     }
+
     .container-card {
-        .cardInfo{
-            .cardInfo-Readme{
+        .cardInfo {
+            .cardInfo-Readme {
                 font-family: Lato;
                 font-weight: Light;
+
                 //font-size: medium;
-                .readmeDescriptionShow-basic{
+                .readmeDescriptionShow-basic {
                     margin: 0 5px;
-                    li{display: flex;
+
+                    li {
+                        display: flex;
                         flex-basis: min-content;
                         justify-content: space-between;
                         font-size: 0.8em;
-                        .descriptionValue{
+
+                        .descriptionValue {
                             text-align: center;
                         }
-                        
+
                     }
                 }
-                .readmeDescriptionShow-size{
-                     margin: 0 5px;
-                    li{display: flex;
+
+                .readmeDescriptionShow-size {
+                    margin: 0 5px;
+
+                    li {
+                        display: flex;
                         flex-basis: min-content;
                         justify-content: space-between;
                         font-size: 0.8em;
-                        .descriptionValue{
+
+                        .descriptionValue {
                             text-align: center;
                         }
-                        
-                    }  
+
+                    }
                 }
             }
         }
-    }  
-    
-    .buyShow li{
+    }
+
+    .buyShow li {
         height: 23px;
     }
-    footer{
-            margin-top:1.1em;
+
+    .inputBlock {
+        .inputSecBlock {
+                .inp-auto {
+                    width: 80%;
+                }
+            
         }
+    }
+
+    footer {
+        
+    }
 }
 
-@media (max-width: 543px) {}
+@media (max-width: 543px) {
+
+    footer {
+        display: grid;
+      
+    }
+}  
