@@ -1,47 +1,28 @@
 let readme = document.querySelectorAll('.cardInfoIcon');
-//console.log(readme[0].className);
 for (let i = 0; i < readme.length; i++) {
-    readme[i].addEventListener('click', selectIcon);
+  readme[i].addEventListener('click', selectIcon);
 }
 
 function selectIcon() {
-    let itemClass = this.parentNode.className;
-    let itemNode = this.parentNode;
-    console.log(itemNode);
-    if (itemClass === 'cardInfo-Readme') {
-        dropDownReadme(itemNode);
-    } else {
-        dropDownBuy(itemNode);
-    }
-}
-
-function dropDownReadme(item) {
-    let descrip = item.querySelector('#DropdownReadme');
-    let selectDrop = descrip.classList.toggle("readmeDescriptionShow"); 
-    console.log(descrip);
-    console.log(selectDrop);
-}
-window.onclick = function(event) {
-  if (!event.target.matches('cardInfo-Readme')) {
-    let dropdowns = document.getElementsByClassName("readme-description");
-       console.log(dropdowns);
-    for (let i = 0; i < dropdowns.length; i++) {
-      if (dropdowns[i].classList.contains('readmeDescriptionShow')) {
-        dropdowns[i].classList.remove('readmeDescriptionShow');
-      }
-    }
+  let itemClass = this.parentNode.className;
+  let itemNode = this.parentNode;
+  if (itemClass === 'cardInfo-Readme') {
+    dropDownReadme(itemNode);
+  } else {
+    dropDownBuy(itemNode);
   }
 }
 
-
-
-
-
-
-/*else  {item.classList.remove ('readme-DescriptionFunction')};*/
-
-
-//console.log(item);
-function dropDownBuy(item) {
-    console.log(item);
+function dropDownReadme(item) {
+  let descrip = item.querySelector('#DropdownReadme');
+  let readmeOut = descrip.classList.toggle("readme-description");
 }
+
+function dropDownBuy(item) {
+  let descrip = item.querySelector('#DropdownBuy');
+  let readmeOut = descrip.classList.toggle("readme-description");
+  console.log(item);
+}
+
+
+

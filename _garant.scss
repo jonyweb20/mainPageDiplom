@@ -1,0 +1,15 @@
+.container-card{
+    grid-template-columns: 1fr;
+    .AboutInfo{
+        justify-self: center;
+        width: 80%;
+        .AboutInfo-intro{
+           .intro{
+               
+            }  
+        }
+        .AboutInfo-rel{
+            
+        }
+    }
+}
