@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textInSpan(textIntro[j], n);
     setTimeout(function () {
         let text = textIntro[j++].innerHTML;
-        textInSpan(textIntro[j]);
+        textInSpan(textIntro[j], n);
        
     }, 7000);
     setTimeout(function () {
@@ -32,7 +32,7 @@ function textInSpan(text, nb) {
         let textNode = document.createTextNode(arrayWord[i]);
        // console.log(textNode);
           //на пробелы
-        if (textNode.textContent === " ")
+    if (textNode.textContent === " ")
     {
         let nv = span.textContent = "&#032;";
        // console.log(nv);

@@ -24,23 +24,5 @@ function dropDownBuy(item) {
   console.log(item);
 }
 
-/*   if(!descrip.classList.contains('readme-description')){
-    descrip.classList.toggle("readmeActiv");
-    console.log(descrip);
-  } */
-
-/* window.onclick = function (event) {
-  if (!event.target.matches('cardInfo-Readme')) {
-    let dropdowns = document.getElementById("DropdownReadme");
-    console.log(dropdowns);
-    for (let i = 0; i < dropdowns.length; i++) {
-      if (dropdowns[i].classList.contains('readme-description')) {
-
-
-        dropdowns[i].classList.remove('readme-description');
-      }
-    }
-  }
-}  */
 
 

@@ -1,4 +1,3 @@
-//let phoneBlock = document.querySelector('.breadcrumb-phone');
 let labPhone = document.querySelector('.labelPhone');
 let phoneListNumber = document.querySelector('.phoneNumber');
 
@@ -25,12 +24,23 @@ let timer = setInterval(function(){
 },2000);
 function draw(timebebin){
     let title = document.getElementsByTagName('title');
+    
     if(moveLeft || arrowRight || arrowCenter){
-       moveLeft.style.transform = 'translate('+ 200 + 'px, 0)';
-    arrowRight.style.transform = 'translate('+ -200 + 'px, 0)';
+        let x;
+        if( window.innerWidth >= 972 ){
+            x = 200;
+ } else {
+     x=100;
+    
+ } 
+        
+        console.log(x);
+         moveLeft.style.transform = 'translate('+ x + 'px, 0)';
+    arrowRight.style.transform = 'translate('+ -x + 'px, 0)';
     if(title[0].innerHTML ==="Index"){
         arrowCenter.style.opacity = 1; 
     }   
+       
     }
 }
 
@@ -38,8 +48,11 @@ function draw(timebebin){
  let dm =document.querySelector ('.navbar-menuIcon');
  dm.addEventListener('click', dropdownMenu);
 function dropdownMenu(){
-    let menu = document.querySelector('.navbar-collapse');
+    let menu = document.querySelector('.navbar-menuDropdown');
+    let usermenu=document.querySelector('.navbarUser');
+   
+    
     menu.classList.toggle("dropMenuShow");
-    console.log(menu);
+    usermenu.classList.toggle("dropUserShow");
 }
     
