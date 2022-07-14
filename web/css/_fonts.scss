@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Garamond";
+    font-style: Regular;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Cormorant_Garamond"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: light;
+    
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Light"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: Italic;
+   
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Italic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf") format("ttf")
+  };
+  @font-face {
+    font-family: "Garamond";
+    font-style: Bold;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-Bold"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf") format("ttf")
+  };
+@font-face {
+    font-family: "Garamond";
+    font-style: BoldItalic;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-BoldItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Garamond";
+    font-style: LightItalic;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("CormorantGaramond-LightItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Garamond";
+    font-style: Medium;
+    src: local("CormorantGaramond-Medium"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf") format("ttf")
+  };
+  
+@font-face {
+    font-family: "Garamond";
+    font-style: MediumItalic; 
+    src: local("CormorantGaramond-MediumItalic"),
+         url("/fonts/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Italic;
+    src: local("Vollkorn-Italic"),
+         url("/fonts/Vollkorn/Vollkorn-Italic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Medium;
+    src: local("Vollkorn-Medium"),
+         url("/fonts/Vollkorn/Vollkorn-Medium.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: MediumItalic;
+    src: local("Vollkorn-MediumItalic"),
+         url("/fonts/Vollkorn/Vollkorn-MediumItalic.ttf") format("ttf")
+  };
+
+@font-face {
+    font-family: "Vollkorn";
+    font-style: Regular;
+    src: local("Vollkorn-Regular"),
+         url("/fonts/Vollkorn/Vollkorn-Regular.ttf") format("ttf")
+  };
+@font-face {
+    font-family: "Exo2Thin";
+    font-style: Regular;
+    src: local("Exo2Thin-Regular"),
+         url("/fonts/Exo2Thin.ttf") format("ttf")
+  };
+@font-face {
+    font-family: "Lato";
+    font-style: Light;
+    src: local("Lato-Light"),
+         url("/fonts/Lato/Lato-Light.ttf") format("ttf")
+  };
+  
+  

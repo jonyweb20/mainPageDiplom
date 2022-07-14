@@ -1,0 +1,44 @@
+
+.inputBlock {
+    display: grid;
+    height: 60vh;
+.inputSecBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .answerBlock{
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    color: $colorDanger;
+    align-self: start;
+    }
+    .inp-auto {
+        display: grid;
+        width: 40%;
+        height: 5em;
+
+        label {
+            font-family: Vollkorn;
+            height: 0.3em;
+            font-size: 1.2em;
+            margin-bottom: 7px;
+            color: $colorSec;
+        }
+
+        input {
+            border-width: 2px 1px 2px 1px;
+            border-style: solid dashed solid dashed;
+            border-color: $colorTop $colorMin $colorTop $colorMin;
+
+            &:placeholder-shown {
+                opacity: 0.5;
+            }
+
+            &:focus {
+                border: 1px solid $colorDop;
+            }
+        }
+    }
+
+}
+} 

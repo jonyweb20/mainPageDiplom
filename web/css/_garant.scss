@@ -1,0 +1,23 @@
+h1{
+    display: flex;
+    align-content: center;
+}
+.container-card{
+    display: flex;
+    .card-img{
+        width: 70px;
+        height: 70px;
+        background: url(img/bg/garants.png) center/cover;  
+        
+    }
+    .card-text{
+        font-size: 20px;
+        font-family: Garamond;
+        font-weight: 700;
+    }
+    grid-template-columns: 1fr;
+    .AboutInfo{
+        justify-self: center;
+        width: 80%;
+    }
+}
